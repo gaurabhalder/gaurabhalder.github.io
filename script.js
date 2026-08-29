@@ -54,8 +54,14 @@
     tab.addEventListener("click", () => activate(tab.dataset.panel));
   });
 
-  const hash = location.hash.replace("#", "");
-  if (hash && document.getElementById(hash)) activate(hash);
+  const applyHash = () => {
+    const hash = location.hash.replace("#", "");
+    if (hash && document.getElementById(hash)?.classList.contains("panel")) {
+      activate(hash);
+    }
+  };
+  applyHash();
+  window.addEventListener("hashchange", applyHash);
 
   // Density radios
   const pinGrid = document.getElementById("pinGrid");
