@@ -1,6 +1,6 @@
-# Gaurab Halder — GitHub Pages
+# Gaurab Halder — Portfolio
 
-Minimal GitHub-style portfolio for [Gaurab Halder](https://github.com/gaurabhalder).
+Personal portfolio site for [Gaurab Halder](https://github.com/gaurabhalder).
 
 ## Preview
 
@@ -12,6 +12,6 @@ Open `http://localhost:8080`.
 
 ## Publish
 
-Push to `main`, then enable Pages: **Settings → Pages → Deploy from a branch → `main` / root**.
+Push to `main`, then confirm GitHub Pages is set to deploy from `main` / root.
 
-Site: `https://gaurabhalder.github.io/gaurab.github.io/`
+Live: https://gaurabhalder.github.io/

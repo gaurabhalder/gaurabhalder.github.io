@@ -1,374 +1,249 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gaurab Halder · GitHub Pages</title>
+    <title>Gaurab Halder — Full Stack Web Developer</title>
     <meta
       name="description"
-      content="Gaurab Halder — full stack web developer. Portfolio on GitHub Pages."
+      content="Portfolio of Gaurab Halder — full stack web developer in Bangladesh. Laravel, WordPress, JavaScript, and performance work."
     />
     <meta name="author" content="Gaurab Halder" />
+    <link rel="canonical" href="https://gaurabhalder.github.io/" />
     <link rel="icon" href="https://avatars.githubusercontent.com/u/37219988?v=4" />
-    <link rel="stylesheet" href="./styles.css?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=3" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="topbar-inner">
-        <a class="brand" href="#overview" aria-label="Home">
-          <svg class="octicon" viewBox="0 0 16 16" width="32" height="32" aria-hidden="true">
-            <path
-              fill="currentColor"
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-            />
-          </svg>
-          <span class="brand-text">gaurabhalder</span>
-        </a>
+    <div class="grain" aria-hidden="true"></div>
 
-        <div class="search-wrap" role="search">
-          <kbd class="search-kbd">/</kbd>
-          <input
-            id="search"
-            class="search-input"
-            type="search"
-            placeholder="Search or jump to…"
-            autocomplete="off"
-          />
-        </div>
-
-        <nav class="top-actions" aria-label="Quick actions">
-          <button
-            type="button"
-            class="radial-btn"
-            id="themeToggle"
-            aria-label="Toggle theme"
-            title="Theme"
-          >
-            <svg class="icon-sun" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="M8 0a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 8 0ZM3.22 3.22a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 0 1-1.06 1.06L3.22 4.28a.75.75 0 0 1 0-1.06Zm9.56 0a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0ZM8 4.5A3.5 3.5 0 1 0 8 11.5 3.5 3.5 0 0 0 8 4.5ZM1.75 8a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5H2.5A.75.75 0 0 1 1.75 8Zm10 0a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5H12.5A.75.75 0 0 1 11.75 8Zm-7.47 4.72a.75.75 0 0 1 1.06 0l1.06 1.06a.75.75 0 1 1-1.06 1.06L4.28 13.78a.75.75 0 0 1 0-1.06Zm6.38 0a.75.75 0 0 1 0 1.06l-1.06 1.06a.75.75 0 1 1-1.06-1.06l1.06-1.06a.75.75 0 0 1 1.06 0ZM8 12.75a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 12.75Z"
-              />
-            </svg>
-            <svg class="icon-moon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="M9.598 1.591a.75.75 0 0 1 .785-.175 7 7 0 1 1-8.967 8.967.75.75 0 0 1 .961-.96 5.5 5.5 0 0 0 7.046-7.046.75.75 0 0 1 .175-.786Zm-1.348 1.77a.75.75 0 0 1-.75.75A4 4 0 1 0 11.4 9.15a.75.75 0 0 1 1.275-.75 5.5 5.5 0 1 1-4.425-5.04Z"
-              />
-            </svg>
-          </button>
-          <a
-            class="radial-btn"
-            href="https://github.com/gaurabhalder"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub profile"
-            title="GitHub"
-          >
-            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-              />
-            </svg>
-          </a>
-        </nav>
-      </div>
+    <header class="site-header">
+      <a class="logo" href="#top">Gaurab Halder</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact">Hire me</a>
     </header>
 
-    <main class="layout">
-      <aside class="profile-rail">
-        <div class="avatar-wrap">
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
           <img
-            class="avatar"
             src="https://avatars.githubusercontent.com/u/37219988?v=4"
-            alt="Gaurab Halder"
-            width="296"
-            height="296"
+            alt=""
+            width="800"
+            height="800"
           />
-          <span class="status-dot" title="Available for hire" aria-hidden="true"></span>
         </div>
-
-        <h1 class="name">Gaurab Halder</h1>
-        <p class="username">gaurabhalder</p>
-        <p class="bio">
-          Full stack web developer with a great passion for programming. Creating magic with 0’s
-          and 1’s.
-        </p>
-
-        <a class="btn btn-primary btn-block" href="#contact">Hire me</a>
-
-        <ul class="meta-list">
-          <li>
-            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 1 0 .5H.25a.25.25 0 0 1 0-.5h1.268A1.736 1.736 0 0 1 1.75 16ZM1.5 1.75v12.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-7.5a.25.25 0 0 0-.25.25Z"
-              />
-            </svg>
-            <span>TechJodo</span>
-          </li>
-          <li>
-            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.293l3.536-3.535a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z"
-              />
-            </svg>
-            <span>Bangladesh</span>
-          </li>
-          <li>
-            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="M7.243 1.414a.75.75 0 0 1 1.061 0l5.482 5.482a.75.75 0 0 1 0 1.06l-5.482 5.483a.75.75 0 0 1-1.061 0L1.76 7.956a.75.75 0 0 1 0-1.06l5.482-5.482ZM8 2.768 2.768 8 8 13.232 13.232 8 8 2.768Z"
-              />
-            </svg>
-            <a href="https://gaurabhalder.com" target="_blank" rel="noopener noreferrer"
-              >gaurabhalder.com</a
-            >
-          </li>
-        </ul>
-
-        <div class="follow-row">
-          <span><strong>15</strong> followers</span>
-          <span class="dot">·</span>
-          <span><strong>5</strong> following</span>
-        </div>
-      </aside>
-
-      <section class="content">
-        <div class="underlinenav" role="tablist" aria-label="Profile sections">
-          <button class="tab is-active" role="tab" aria-selected="true" data-panel="overview">
-            <span class="tab-icon radial-mini" aria-hidden="true">◉</span>
-            Overview
-          </button>
-          <button class="tab" role="tab" aria-selected="false" data-panel="work">
-            <span class="tab-icon radial-mini" aria-hidden="true">◎</span>
-            Work
-            <span class="counter">4</span>
-          </button>
-          <button class="tab" role="tab" aria-selected="false" data-panel="experience">
-            <span class="tab-icon radial-mini" aria-hidden="true">◍</span>
-            Experience
-          </button>
-          <button class="tab" role="tab" aria-selected="false" data-panel="contact">
-            <span class="tab-icon radial-mini" aria-hidden="true">◌</span>
-            Contact
-          </button>
-        </div>
-
-        <div class="panel is-active" id="overview" role="tabpanel">
-          <div class="panel-header">
-            <h2>Pinned</h2>
-            <fieldset class="radio-group" aria-label="View density">
-              <legend class="sr-only">View</legend>
-              <label class="radio-pill">
-                <input type="radio" name="density" value="comfortable" checked />
-                <span class="radio-face"></span>
-                Comfortable
-              </label>
-              <label class="radio-pill">
-                <input type="radio" name="density" value="compact" />
-                <span class="radio-face"></span>
-                Compact
-              </label>
-            </fieldset>
-          </div>
-
-          <div class="pin-grid" id="pinGrid" data-density="comfortable">
-            <article class="repo-card">
-              <div class="repo-top">
-                <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-                  <path
-                    fill="currentColor"
-                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 6.5v-.875C2 4.57 3.07 3.5 4.375 3.5h8.25ZM2 11.5a1 1 0 0 0 1 1h3.5V9.25A.75.75 0 0 1 7.25 8.5h5.5a.75.75 0 0 1 0 1.5H8v3.75A.75.75 0 0 1 7.25 14h-4.5A2.5 2.5 0 0 1 0 11.5v-7A2.5 2.5 0 0 1 2.5 2H4a.75.75 0 0 1 0 1.5H2.5A1 1 0 0 0 1.5 4.5Z"
-                  />
-                </svg>
-                <a href="#work">laravel-apps</a>
-                <span class="badge">Public</span>
-              </div>
-              <p>Pixel-perfect Laravel apps — structured, maintainable, ready to scale.</p>
-              <div class="repo-meta">
-                <span><i class="lang-dot php"></i> PHP</span>
-                <span>★ Full stack</span>
-              </div>
-            </article>
-
-            <article class="repo-card">
-              <div class="repo-top">
-                <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-                  <path
-                    fill="currentColor"
-                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 6.5v-.875C2 4.57 3.07 3.5 4.375 3.5h8.25ZM2 11.5a1 1 0 0 0 1 1h3.5V9.25A.75.75 0 0 1 7.25 8.5h5.5a.75.75 0 0 1 0 1.5H8v3.75A.75.75 0 0 1 7.25 14h-4.5A2.5 2.5 0 0 1 0 11.5v-7A2.5 2.5 0 0 1 2.5 2H4a.75.75 0 0 1 0 1.5H2.5A1 1 0 0 0 1.5 4.5Z"
-                  />
-                </svg>
-                <a href="#work">wordpress-craft</a>
-                <span class="badge">Public</span>
-              </div>
-              <p>Custom themes, plugins, and performance work for WordPress sites.</p>
-              <div class="repo-meta">
-                <span><i class="lang-dot js"></i> JavaScript</span>
-                <span>★ Themes</span>
-              </div>
-            </article>
-
-            <article class="repo-card">
-              <div class="repo-top">
-                <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-                  <path
-                    fill="currentColor"
-                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 6.5v-.875C2 4.57 3.07 3.5 4.375 3.5h8.25ZM2 11.5a1 1 0 0 0 1 1h3.5V9.25A.75.75 0 0 1 7.25 8.5h5.5a.75.75 0 0 1 0 1.5H8v3.75A.75.75 0 0 1 7.25 14h-4.5A2.5 2.5 0 0 1 0 11.5v-7A2.5 2.5 0 0 1 2.5 2H4a.75.75 0 0 1 0 1.5H2.5A1 1 0 0 0 1.5 4.5Z"
-                  />
-                </svg>
-                <a href="#work">speed-lab</a>
-                <span class="badge">Public</span>
-              </div>
-              <p>Caching, minify, and Core Web Vitals improvements for production sites.</p>
-              <div class="repo-meta">
-                <span><i class="lang-dot css"></i> CSS</span>
-                <span>★ Perf</span>
-              </div>
-            </article>
-
-            <article class="repo-card">
-              <div class="repo-top">
-                <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
-                  <path
-                    fill="currentColor"
-                    d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 6.5v-.875C2 4.57 3.07 3.5 4.375 3.5h8.25ZM2 11.5a1 1 0 0 0 1 1h3.5V9.25A.75.75 0 0 1 7.25 8.5h5.5a.75.75 0 0 1 0 1.5H8v3.75A.75.75 0 0 1 7.25 14h-4.5A2.5 2.5 0 0 1 0 11.5v-7A2.5 2.5 0 0 1 2.5 2H4a.75.75 0 0 1 0 1.5H2.5A1 1 0 0 0 1.5 4.5Z"
-                  />
-                </svg>
-                <a href="#work">debug-kit</a>
-                <span class="badge">Public</span>
-              </div>
-              <p>HTML, CSS, JS, PHP fixes — responsive, valid, and production-ready.</p>
-              <div class="repo-meta">
-                <span><i class="lang-dot html"></i> HTML</span>
-                <span>★ Support</span>
-              </div>
-            </article>
-          </div>
-
-          <div class="skills-block">
-            <h2>Skills</h2>
-            <div class="radial-skills" role="list">
-              <div class="radial-skill" role="listitem" style="--pct: 95">
-                <svg viewBox="0 0 36 36" aria-hidden="true">
-                  <circle class="track" cx="18" cy="18" r="15.5" />
-                  <circle class="value" cx="18" cy="18" r="15.5" />
-                </svg>
-                <span class="radial-label">HTML/CSS</span>
-                <span class="radial-pct">95%</span>
-              </div>
-              <div class="radial-skill" role="listitem" style="--pct: 84">
-                <svg viewBox="0 0 36 36" aria-hidden="true">
-                  <circle class="track" cx="18" cy="18" r="15.5" />
-                  <circle class="value" cx="18" cy="18" r="15.5" />
-                </svg>
-                <span class="radial-label">WordPress</span>
-                <span class="radial-pct">84%</span>
-              </div>
-              <div class="radial-skill" role="listitem" style="--pct: 79">
-                <svg viewBox="0 0 36 36" aria-hidden="true">
-                  <circle class="track" cx="18" cy="18" r="15.5" />
-                  <circle class="value" cx="18" cy="18" r="15.5" />
-                </svg>
-                <span class="radial-label">JavaScript</span>
-                <span class="radial-pct">79%</span>
-              </div>
-              <div class="radial-skill" role="listitem" style="--pct: 80">
-                <svg viewBox="0 0 36 36" aria-hidden="true">
-                  <circle class="track" cx="18" cy="18" r="15.5" />
-                  <circle class="value" cx="18" cy="18" r="15.5" />
-                </svg>
-                <span class="radial-label">Laravel</span>
-                <span class="radial-pct">80%</span>
-              </div>
-            </div>
+        <div class="hero-copy">
+          <p class="hero-brand reveal">Gaurab Halder</p>
+          <h1 class="hero-title reveal delay-1">
+            Full stack web developer crafting clear, fast experiences.
+          </h1>
+          <p class="hero-lede reveal delay-2">
+            Building with Laravel, WordPress, and modern JavaScript from Bangladesh —
+            available for freelance projects.
+          </p>
+          <div class="hero-actions reveal delay-3">
+            <a class="btn btn-primary" href="#contact">Start a project</a>
+            <a class="btn btn-ghost" href="#work">View selected work</a>
           </div>
         </div>
+      </section>
 
-        <div class="panel" id="work" role="tabpanel" hidden>
-          <h2 class="panel-title">What I offer</h2>
-          <p class="panel-lede">
+      <section class="section about" id="about">
+        <div class="section-inner">
+          <p class="eyebrow reveal">About</p>
+          <h2 class="section-title reveal delay-1">Who I am</h2>
+          <div class="about-layout">
+            <p class="about-copy reveal delay-2">
+              I’m a full stack web developer with a great passion for programming. I create
+              reliable web products across the stack — from WordPress themes and plugins to
+              Laravel applications and performance work — always aiming for clean structure and
+              lasting results.
+            </p>
+            <dl class="about-facts reveal delay-3">
+              <div>
+                <dt>Based in</dt>
+                <dd>Bangladesh</dd>
+              </div>
+              <div>
+                <dt>Currently</dt>
+                <dd>TechJodo</dd>
+              </div>
+              <div>
+                <dt>Open to</dt>
+                <dd>Freelance &amp; hire</dd>
+              </div>
+              <div>
+                <dt>Online</dt>
+                <dd>
+                  <a href="https://gaurabhalder.com" target="_blank" rel="noopener noreferrer"
+                    >gaurabhalder.com</a
+                  >
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Services</p>
+          <h2 class="section-title reveal delay-1">What I offer</h2>
+          <p class="section-lede reveal delay-2">
             Experienced across the full development cycle for dynamic web projects.
           </p>
-          <div class="issue-list">
-            <article class="issue-row">
-              <span class="radial-status open" aria-hidden="true"></span>
+          <ul class="service-list">
+            <li class="reveal">
+              <h3>WordPress development</h3>
+              <p>Responsive themes from scratch, customization, and plugin work.</p>
+            </li>
+            <li class="reveal delay-1">
+              <h3>Laravel development</h3>
+              <p>Modern Laravel apps with clean structure and maintainable code.</p>
+            </li>
+            <li class="reveal delay-2">
+              <h3>Custom plugins &amp; fixes</h3>
+              <p>Build or extend plugins; debug HTML, CSS, JS, and PHP issues.</p>
+            </li>
+            <li class="reveal delay-3">
+              <h3>Speed optimization</h3>
+              <p>Render-blocking fixes, caching, minify — faster load times.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section work" id="work">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Selected work</p>
+          <h2 class="section-title reveal delay-1">Focus areas</h2>
+          <p class="section-lede reveal delay-2">
+            A few directions that reflect craft, clarity, and outcomes.
+          </p>
+          <ol class="work-list">
+            <li class="reveal">
+              <span class="work-index">01</span>
               <div>
-                <h3>WordPress development</h3>
-                <p>Responsive themes from scratch, customization, and plugin work.</p>
+                <h3>Laravel apps</h3>
+                <p>Pixel-perfect Laravel apps — structured, maintainable, ready to scale.</p>
               </div>
+              <span class="work-tag">PHP</span>
+            </li>
+            <li class="reveal delay-1">
+              <span class="work-index">02</span>
+              <div>
+                <h3>WordPress craft</h3>
+                <p>Custom themes, plugins, and performance work for WordPress sites.</p>
+              </div>
+              <span class="work-tag">JavaScript</span>
+            </li>
+            <li class="reveal delay-2">
+              <span class="work-index">03</span>
+              <div>
+                <h3>Speed lab</h3>
+                <p>Caching, minify, and Core Web Vitals improvements for production sites.</p>
+              </div>
+              <span class="work-tag">CSS</span>
+            </li>
+            <li class="reveal delay-3">
+              <span class="work-index">04</span>
+              <div>
+                <h3>Debug kit</h3>
+                <p>HTML, CSS, JS, PHP fixes — responsive, valid, and production-ready.</p>
+              </div>
+              <span class="work-tag">HTML</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Skills</p>
+          <h2 class="section-title reveal delay-1">Tools I use daily</h2>
+          <ul class="skill-meters" role="list">
+            <li class="reveal" style="--pct: 95">
+              <div class="skill-top">
+                <span>HTML / CSS</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-track" aria-hidden="true"><span class="skill-fill"></span></div>
+            </li>
+            <li class="reveal delay-1" style="--pct: 84">
+              <div class="skill-top">
+                <span>WordPress</span>
+                <span>84%</span>
+              </div>
+              <div class="skill-track" aria-hidden="true"><span class="skill-fill"></span></div>
+            </li>
+            <li class="reveal delay-2" style="--pct: 80">
+              <div class="skill-top">
+                <span>Laravel</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-track" aria-hidden="true"><span class="skill-fill"></span></div>
+            </li>
+            <li class="reveal delay-3" style="--pct: 79">
+              <div class="skill-top">
+                <span>JavaScript</span>
+                <span>79%</span>
+              </div>
+              <div class="skill-track" aria-hidden="true"><span class="skill-fill"></span></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="section-inner">
+          <p class="eyebrow reveal">Experience</p>
+          <h2 class="section-title reveal delay-1">Where I’ve worked</h2>
+          <p class="section-lede reveal delay-2">
+            A track record of shipping thoughtful digital products and keeping systems running.
+          </p>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <time>2020 — Present</time>
+              <h3>Sr. Executive (System Engineer)</h3>
+              <p class="org">Sadia Enterprise</p>
+              <p>
+                Official websites, reporting, optical networking (OLT, switches, MikroTik, ONU),
+                and customer support.
+              </p>
             </article>
-            <article class="issue-row">
-              <span class="radial-status open" aria-hidden="true"></span>
-              <div>
-                <h3>Laravel development</h3>
-                <p>Modern Laravel apps with clean structure and maintainable code.</p>
-              </div>
-            </article>
-            <article class="issue-row">
-              <span class="radial-status open" aria-hidden="true"></span>
-              <div>
-                <h3>Custom plugins &amp; fixes</h3>
-                <p>Build or extend plugins; debug HTML, CSS, JS, and PHP issues.</p>
-              </div>
-            </article>
-            <article class="issue-row">
-              <span class="radial-status open" aria-hidden="true"></span>
-              <div>
-                <h3>Speed optimization</h3>
-                <p>Render-blocking fixes, caching, minify — faster load times.</p>
-              </div>
+            <article class="timeline-item reveal delay-1">
+              <time>2016 — 2017</time>
+              <h3>Executive (Solutions Engineer)</h3>
+              <p class="org">Rite Solutions Limited</p>
+              <p>
+                Cloud servers, DNS, switches/routers, video conferencing, IP PBX, and on-site
+                solutions.
+              </p>
             </article>
           </div>
         </div>
+      </section>
 
-        <div class="panel" id="experience" role="tabpanel" hidden>
-          <h2 class="panel-title">Work experience</h2>
-          <div class="commit-list">
-            <article class="commit">
-              <div class="commit-rail" aria-hidden="true">
-                <span class="commit-dot"></span>
-                <span class="commit-line"></span>
-              </div>
-              <div class="commit-body">
-                <div class="commit-head">
-                  <strong>Sr. Executive (System Engineer)</strong>
-                  <time>2020 — Present</time>
-                </div>
-                <p class="commit-org">Sadia Enterprise</p>
-                <p>
-                  Official websites, reporting, optical networking (OLT, switches, MikroTik, ONU),
-                  and customer support.
-                </p>
-              </div>
-            </article>
-            <article class="commit">
-              <div class="commit-rail" aria-hidden="true">
-                <span class="commit-dot"></span>
-              </div>
-              <div class="commit-body">
-                <div class="commit-head">
-                  <strong>Executive (Solutions Engineer)</strong>
-                  <time>2016 — 2017</time>
-                </div>
-                <p class="commit-org">Rite Solutions Limited</p>
-                <p>
-                  Cloud servers, DNS, switches/routers, video conferencing, IP PBX, and on-site
-                  solutions.
-                </p>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="panel" id="contact" role="tabpanel" hidden>
-          <h2 class="panel-title">Start a conversation</h2>
-          <p class="panel-lede">Available for freelance projects. I typically reply within one business day.</p>
-          <div class="contact-actions">
+      <section class="section contact" id="contact">
+        <div class="section-inner contact-inner">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="section-title reveal delay-1">Have a project in mind?</h2>
+          <p class="section-lede reveal delay-2">
+            Tell me about your goals — I typically reply within one business day.
+          </p>
+          <div class="contact-actions reveal delay-3">
             <a
               class="btn btn-primary"
               href="https://github.com/gaurabhalder"
@@ -377,7 +252,7 @@
               >View on GitHub</a
             >
             <a
-              class="btn"
+              class="btn btn-ghost"
               href="https://gaurabhalder.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -388,43 +263,11 @@
       </section>
     </main>
 
-    <div class="radial-fab" id="radialFab">
-      <button
-        type="button"
-        class="radial-fab-trigger radial-btn radial-btn-lg"
-        id="fabToggle"
-        aria-expanded="false"
-        aria-controls="fabMenu"
-        aria-label="Quick menu"
-      >
-        <span class="fab-plus" aria-hidden="true"></span>
-      </button>
-      <ul class="radial-fab-menu" id="fabMenu" hidden>
-        <li style="--i: 0">
-          <button type="button" class="radial-btn" data-jump="overview" title="Overview">Ov</button>
-        </li>
-        <li style="--i: 1">
-          <button type="button" class="radial-btn" data-jump="work" title="Work">Wk</button>
-        </li>
-        <li style="--i: 2">
-          <button type="button" class="radial-btn" data-jump="experience" title="Experience">Ex</button>
-        </li>
-        <li style="--i: 3">
-          <button type="button" class="radial-btn" data-jump="contact" title="Contact">Ct</button>
-        </li>
-      </ul>
-    </div>
-
     <footer class="site-footer">
-      <svg viewBox="0 0 16 16" width="24" height="24" aria-hidden="true">
-        <path
-          fill="currentColor"
-          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-        />
-      </svg>
-      <span>© <span id="year"></span> Gaurab Halder</span>
+      <p>© <span id="year"></span> Gaurab Halder</p>
+      <p>TechJodo · Bangladesh</p>
     </footer>
 
-    <script src="./script.js?v=2"></script>
+    <script src="./script.js?v=3"></script>
   </body>
 </html>
